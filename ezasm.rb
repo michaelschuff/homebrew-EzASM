@@ -15,6 +15,6 @@ class Ezasm < Formula
   end
 
   test do
-    system "#{bin}/ezasm", "--version"
+    system "#{bin}/Ezasm", "--version"
   end
 end
