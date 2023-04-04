@@ -1,4 +1,4 @@
-class Ezasm < Formula
+class ezasm < Formula
   desc "An assembly-like programming language for use in education"
   homepage "https://github.com/ezasm-org/EzASM"
   url "https://github.com/michaelschuff/EzASM.git"
@@ -15,6 +15,6 @@ class Ezasm < Formula
   end
 
   test do
-    system "#{bin}/Ezasm", "--version"
+    system "#{bin}/ezasm", "--version"
   end
 end
