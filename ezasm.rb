@@ -10,7 +10,7 @@ class Ezasm < Formula
 
   def install
     system "mvn", "compile", "assembly:single"
-    libexec.install "EzASM-#{version}-beta-full.jar"
+    libexec.install "target/EzASM-#{version}-beta-full.jar"
     bin.write_jar_script libexec/"ezasm-#{version}.jar", "ezasm", java_version: "17"
   end
 
