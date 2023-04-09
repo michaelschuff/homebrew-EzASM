@@ -14,8 +14,6 @@ class Ezasm < Formula
     bin.write_jar_script libexec/"ezasm-#{version}.jar", "ezasm", java_version: "17"
   end
 
-  app "EzASM.app"
-
   test do
     system "#{bin}/ezasm", "--version"
   end
