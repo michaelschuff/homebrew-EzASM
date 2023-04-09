@@ -10,7 +10,7 @@ class Ezasm < Formula
 
   def install
     system "mvn", "compile", "assembly:single"
-    value = %x( echo 'hi' )
+    system "echo", "'hi'"
   end
 
   test do
