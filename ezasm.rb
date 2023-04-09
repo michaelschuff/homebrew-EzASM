@@ -10,9 +10,7 @@ class Ezasm < Formula
 
   def install
     system "mvn", "compile", "assembly:single"
-    exec("ls")
-    exec("cd" ,"target")
-    exec("ls")
+    exec("ls;cd target; ls")
   end
 
   test do
